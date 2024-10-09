@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans',sans-serif;
+    padding: 0;
+    margin: 0;
+    background-image: url(../img/sea.jpg);
+    filter: brightness(80%);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    color: antiquewhite;
+}
+h3 {
+    color: antiquewhite;
+}
+footer{
+    padding: 25px;
+    color: antiquewhite;
+    text-align: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 8%, rgba(18,18,85,1) 69%, rgba(0,212,255,1) 100%); 
+}
+nav a{
+    font-size: 20px;
+    font-weight: 350;
+    text-decoration: dashed;
+    color: antiquewhite;
+    
+}
+nav a:hover{
+    font-weight: bold;
+}
+.featured-image{
+    width: 50%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border: 5px solid black;
+}
+.profile header{
+    text-align: center;
+}
+.profile img{
+    width: 200px;
+}
+.jumbotron{
+    font-size: 20px;
+    padding: 10px 0;
+    max-height: 150px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 8%, rgba(18,18,85,1) 69%, rgba(0,212,255,1) 100%); 
+    text-align: center;
+    color: antiquewhite;
+    
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+    border-radius: 5px;
+    padding: 15px;
+}
+.background-color{
+    background-color: #5B99C2;
+}
+nav li{
+    list-style-type: none;
+}
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+nav {
+    background-color: #1F316F;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    
+}
+main {
+    padding: 15px;
+    display: flex;
+    gap: 1.5rem;
+}
+#content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+}
+aside{
+    flex: 1;
+}
+.box{
+    background-color: #5B99C2;
+    color: antiquewhite;
+}
+header{
+    display: inline;
+}
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+    main aside {
+        align-self: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+    main aside {
+        align-self: stretch;
+    }
+}
